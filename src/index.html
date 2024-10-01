@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Practicando con lo Aprendido</title>
+	<link rel="stylesheet" href="output.css">
+	<link rel="shortcut icon" href="assets/img/logo-academlo.png" type="image/x-icon" />
+	<script src="assets/js/main.js" defer></script>
+</head>
+
+<body class="bg-gray-100 font-san dark:bg-gray-400">
+	<!-- NavBar -->
+	<nav class="bg-white shadow fixed top-0 left-0 w-full z-10 dark:bg-gray-600">
+		<div class="container mx-auto px-4">
+			<div class="flex justify-between items-center py-2">
+				<!-- Logo  -->
+				<a href="#" class="text-xl font-bold text-gray-800">
+					<img src="assets/img/logo-academlo.png" alt="logo-academlo" class="size-12" /></a>
+					<!-- Darkmode -->
+						<button id="darkmode" class="text-2xl">🌚</button>
+					<!-- End Darkmode -->
+				<!-- Burguer Menu -->
+				<div class="md:hidden">
+					<a href="#mobile-menu" class="focus:outline-none">
+						<svg class="size-6 dark:stroke-white stroke-black" fill="none" viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="M4 6h16M4 12h16m-7 6h7"></path>
+						</svg>
+					</a>
+				</div>
+				<!-- End Burguer Menu -->
+				<ul class="hidden md:flex space-x-4">
+					<li>
+						<a href="#home" class="text-gray-600 transition-colors hover:text-[#ea4959] dark:text-gray-200 dark:hover:text-[#ea4959]">Inicio</a>
+					</li>
+					<li>
+						<a href="#about" class="text-gray-600 transition-colors hover:text-[#ea4959] dark:text-gray-200 dark:hover:text-[#ea4959]">Acerca</a>
+					</li>
+					<li>
+						<a href="#services" class="text-gray-600 transition-colors hover:text-[#ea4959] dark:text-gray-200 dark:hover:text-[#ea4959]">Servicios</a>
+					</li>
+					<li>
+						<a href="#contact" class="text-gray-600 transition-colors hover:text-[#ea4959] dark:text-gray-200 dark:hover:text-[#ea4959]">Contacto</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Burguer Menu Mobile -->
+		<div id="mobile-menu" class="transition-[top] duration-500 ease-in-out fixed -top-full left-0 justify-center py-8 bg-white w-full target:top-0 md:hidden dark:bg-gray-600">
+			<a href="#close-menu" class="focus:outline-none absolute top-2 right-2">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="dark:fill-gray-200 fill-black">
+					<path
+						d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm4.207 12.793-1.414 1.414L12 13.414l-2.793 2.793-1.414-1.414L10.586 12 7.793 9.207l1.414-1.414L12 10.586l2.793-2.793 1.414 1.414L13.414 12l2.793 2.793z">
+					</path>
+				</svg>
+			</a>
+			<ul class="grid justify-center gap-2">
+				<li class="text-center">
+					<a href="#home" class="text-gray-600 transition-colors hover:text-[#ea4959] dark:text-gray-200">Inicio</a>
+				</li>
+				<li class="text-center">
+					<a href="#about" class="text-gray-600 transition-colors hover:text-[#ea4959] dark:text-gray-200">Acerca</a>
+				</li>
+				<li class="text-center">
+					<a href="#services" class="text-gray-600 transition-colors hover:text-[#ea4959] dark:text-gray-200">Servicios</a>
+				</li>
+				<li class="text-center">
+					<a href="#contact" class="text-gray-600 transition-colors hover:text-[#ea4959] dark:text-gray-200">Contacto</a>
+				</li>
+			</ul>
+		</div>
+		<!-- End Burguer Menu Mobile -->
+	</nav>
+
+	<!-- Header -->
+	<header id="home" class="h-screen bg-[#e44959] text-center grid justify-center content-center">
+		<h1 class="text-3xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">¡Bienvenido a Mi Sitio Web!</h1>
+		<p class="text-lg md:text-xl text-white">Realizado con Tailwind en Academlo</p>
+	</header>
+
+	<!-- Main  -->
+	<main class="mx-auto">
+		<!-- About Section -->
+		<section id="about" class="container mx-auto py-24 px-4 dark:bg-gray-400">
+			<h2 class="text-center text-2xl md:text-3xl font-bold text-gray-800 mb-8">Acerca de Nosotros</h2>
+			<p class="text-lg text-gray-700 mb-6">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id
+				ipsum ut odio aliquet tincidunt. Duis porta sem eget magna tincidunt,
+				ut placerat turpis aliquet. Vestibulum convallis ex ac ipsum
+				malesuada, nec commodo elit lobortis.
+			</p>
+			<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+				<div class="bg-gray-200 p-3 rounded-lg shadow-md transition-transform duration-300 cursor-pointer hover:scale-105 col-span-2 row-span-2">
+					<img src="https://picsum.photos/1920/1080?random=1" alt="img1" class="size-full rounded-lg object-cover" />
+				</div>
+
+				<div class="bg-gray-200 p-3 rounded-lg shadow-md transition-transform duration-300 cursor-pointer hover:scale-105 col-span-1 row-span-1">
+					<img src="https://picsum.photos/1920/1080?random=2" alt="img2" class="size-full rounded-lg object-cover" />
+				</div>
+
+				<div class="bg-gray-200 p-3 rounded-lg shadow-md transition-transform duration-300 cursor-pointer hover:scale-105 col-span-1 row-span-1">
+					<img src="https://picsum.photos/1920/1080?random=3" alt="img3" class="size-full rounded-lg object-cover" />
+				</div>
+
+				<div class="bg-gray-200 p-3 rounded-lg shadow-md transition-transform duration-300 cursor-pointer hover:scale-105 col-span-1 row-span-2">
+					<img src="https://picsum.photos/1920/1080?random=4" alt="img4" class="size-full rounded-lg object-cover" />
+				</div>
+
+				<div class="bg-gray-200 p-3 rounded-lg shadow-md transition-transform duration-300 cursor-pointer hover:scale-105 col-span-1 row-span-1">
+					<img src="https://picsum.photos/1920/1080?random=5" alt="img5" class="size-full rounded-lg object-cover" />
+				</div>
+
+				<div class="bg-gray-200 p-3 rounded-lg shadow-md transition-transform duration-300 cursor-pointer hover:scale-105 col-span-2 row-span-1">
+					<img src="https://picsum.photos/1920/1080?random=7" alt="img7" class="size-full rounded-lg object-cover" />
+				</div>
+
+				<div class="bg-gray-200 p-3 rounded-lg shadow-md transition-transform duration-300 cursor-pointer hover:scale-105 col-span-1 row-span-1">
+					<img src="https://picsum.photos/1920/1080?random=8" alt="img8" class="size-full rounded-lg object-cover" />
+				</div>
+
+				<div class="bg-gray-200 p-3 rounded-lg shadow-md transition-transform duration-300 cursor-pointer hover:scale-105 col-span-1 row-span-1 md:col-span-4">
+					<img src="https://picsum.photos/1920/1080?random=9" alt="img9" class="size-full rounded-lg object-cover" />
+				</div>
+			</div>
+		</section>
+
+		<!-- Services Section -->
+		<section id="services" class="bg-gray-200 py-24 px-4 dark:bg-gray-500">
+			<div class="container mx-auto">
+				<h2 class="text-center text-2xl md:text-3xl font-bold text-gray-800 mb-8 dark:text-gray-200">Nuestros Servicios</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<details class="bg-white rounded-lg shadow-md p-6 cursor-pointer dark:bg-gray-600" name="service">
+						<summary class="text-lg md:text-2xl font-semibold text-gray-800 dark:text-gray-200">Servicio 1</summary>
+						<p class="text-gray-700 dark:text-gray-200">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</p>
+					</details>
+					<details class="bg-white rounded-lg shadow-md p-6 cursor-pointer dark:bg-gray-600" name="service">
+						<summary class="text-lg md:text-2xl font-semibold text-gray-800 dark:text-gray-200">Servicio 2</summary>
+						<p class="text-gray-700 dark:text-gray-200">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</p>
+					</details>
+					<details class="bg-white rounded-lg shadow-md p-6 cursor-pointer dark:bg-gray-600" name="service">
+						<summary class="text-lg md:text-2xl font-semibold text-gray-800 dark:text-gray-200">Servicio 3</summary>
+						<p class="text-gray-700 dark:text-gray-200">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</p>
+					</details>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<section id="contact" class="container mx-auto py-24 px-4 dark:bg-gray-400">
+			<h2 class="text-center text-2xl md:text-3xl font-bold text-gray-800 mb-8">Contacto</h2>
+			<form class="max-w-lg mx-auto">
+				<div class="mb-4">
+					<label for="name" class="block text-gray-700 text-sm font-bold	mb-2">Nombre</label>
+					<input type="text" id="name" name="name" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500 dark:bg-gray-300" placeholder="Ingrese su nombre" />
+				</div>
+				<div class="mb-4">
+					<label for="email" class="block text-gray-700 text-sm font-bold	mb-2">Correo electrónico</label>
+					<input type="email" id="email" name="email" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500 dark:bg-gray-300"" placeholder="Ingrese su correo electrónico" />
+				</div>
+				<div class="mb-4">
+					<label for="message" class="block text-gray-700 text-sm font-bold	mb-2">Mensaje</label>
+					<textarea id="message" name="message" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500 dark:bg-gray-300"" rows="4"
+						placeholder="Ingrese su mensaje"></textarea>
+				</div>
+				<button type="submit" class="bg-[#ea4959] text-white font-bold px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors duration-200">Enviar mensaje</button>
+			</form>
+		</section>
+	</main>
+
+	<!-- Footer -->
+	<footer class="bg-gray-800 text-gray-200 py-8 md:py-12">
+		<div class="container mx-auto text-center">
+			<p>&copy; 2024 Landing Page realizada con Tailwind.</p>
+		</div>
+	</footer>
+</body>
+
+</html>
